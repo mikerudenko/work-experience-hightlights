@@ -1,0 +1,49 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "*",
+    "bower": "*",
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-cached": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-debug": "*",
+    "gulp-eslint": "^2.0.0",
+    "gulp-if": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-newer": "*",
+    "gulp-notify": "*",
+    "gulp-obfuscate": "*",
+    "gulp-plumber": "*",
+    "gulp-remember": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sftp": "^0.1.5",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-wiredep": "0.0.0",
+    "imagemin-pngquant": "*",
+    "local-web-server": "*",
+    "stream-combiner2": "^1.1.1",
+    "through2": "^2.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Balionezio/Gulp-bare/issues"
+  },
+  "homepage": "https://github.com/Balionezio/Gulp-bare#readme",
+  "description": "my own translator"
+}

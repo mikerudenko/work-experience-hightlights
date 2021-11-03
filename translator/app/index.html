@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- bower:css -->
+    <link
+      rel="stylesheet"
+      href="./bower_components/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- endbower -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Translator</title>
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <h3 class="title">Translator of Mike Rudenko code</h3>
+
+      <!-- main area -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-primary console">
+            <div class="panel-heading">Console</div>
+            <div class="panel-body console-body"></div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="19"
+            class="input-sourceCode-area form-control"
+          >
+          </textarea>
+        </div>
+        <div class="col-sm-2 controls">
+          <div class="btn btn-primary save-btn">Save source code</div>
+          <div class="btn btn-primary reset-btn">Reset</div>
+          <div class="btn btn-primary la-btn">Lexical Analyzer</div>
+          <div class="btn btn-primary sa-btn">Syntax Analyzer</div>
+          <div class="btn btn-success co-btn">Run</div>
+          <div class="btn btn-primary default-source-code">
+            Default source code
+          </div>
+        </div>
+      </div>
+
+      <!-- tabs -->
+      <div class="row">
+        <div class="col-sm-12 tabs-container">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a
+                href="#lexicalAnalyzer"
+                aria-controls="lexicalAnalyzer"
+                data-toggle="tab"
+                >Lexical Analyzer</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="#poliz" aria-controls="poliz" data-toggle="tab">Poliz</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- tables of lexems -->
+            <div role="tabpanel" class="tab-pane active" id="lexicalAnalyzer">
+              <div class="row">
+                <div class="col-sm-6">
+                  <table class="table table-bordered first-table">
+                    <thead>
+                      <tr>
+                        <th>Lexem</th>
+                        <th>Code of lexem</th>
+                        <th>Number of line</th>
+                        <th>Index of id/const</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <div class="col-sm-3">
+                  <table class="table table-bordered second-table">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Number</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <div class="col-sm-3">
+                  <table class="table table-bordered third-table">
+                    <thead>
+                      <tr>
+                        <th>Constant</th>
+                        <th>Number</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- second tab -->
+            <div role="tabpanel" class="tab-pane" id="poliz">
+              <table class="table table-bordered table-poliz">
+                <thead>
+                  <tr>
+                    <th>Operator</th>
+                    <th>Poliz</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bower:js -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbower -->
+    <script src="./js/com.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/pol.js"></script>
+    <script src="./js/sa.js"></script>
+    <script src="./js/la.js"></script>
+  </body>
+</html>
