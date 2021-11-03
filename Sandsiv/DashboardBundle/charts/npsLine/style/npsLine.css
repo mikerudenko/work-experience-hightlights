@@ -1,0 +1,4 @@
+.line-chart .line-dot,
+.line-chart .nps-line-dot {
+    cursor: pointer;
+}

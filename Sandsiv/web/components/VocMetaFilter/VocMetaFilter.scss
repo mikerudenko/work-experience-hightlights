@@ -1,0 +1,128 @@
+.voc-meta-filter {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 3px;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  cursor: grab;
+  user-select: none;
+  position: relative;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &__or-blocks {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__or-wrapper {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+  }
+
+  &__and-mark {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  &__line-horizontal {
+    width: 40px;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  &__line-vertical {
+    width: 1px;
+    background-color: #ccc;
+    min-height: 40px;
+    height: auto;
+  }
+
+  &__and-button-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 65px;
+  }
+
+  &__or-button-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 65px;
+    margin-bottom: 10px;
+
+    .voc-meta-filter__line-vertical {
+      height: 40px;
+    }
+  }
+
+  &__button {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border: 1px solid #ccc;
+    line-height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ccc;
+    }
+
+    &:disabled {
+      color: #ccc;
+      cursor: no-drop;
+    }
+  }
+
+  &__or-mark {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-left: 75px;
+    flex-grow: 1;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+}
+
+.meta-filter-tooltip-container {
+  width: inherit;
+}

@@ -1,0 +1,15 @@
+<div>
+    <svg ng-attr-height="{{ model.getHeight() }}" ng-attr-width="{{ model.getWidth() }}" class="bubble-chart chart"
+         reference-dom-as="viewport"
+         svg-view-box="{{ viewport | domElementBoundigBox | boundigBoxToSvgViewBox }}">
+    </svg>
+    <chart-legend
+        disable="disableOrder || readOnly"
+        legend-items="groups"
+        on-item-order-change="onLegendOrderChange"
+        on-item-label-change="onLabelChange"
+        on-item-color-change="onColorChange"
+        on-item-mouseover="onLegendOver"
+        on-item-mouseout="onLegendOut"
+    ></chart-legend>
+</div>

@@ -1,0 +1,30 @@
+.pie-chart_arc_interactive {
+    cursor: pointer;
+}
+
+.pie-chart .total {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.label-text {
+    alignment-baseline: middle;
+    font-size: 16px;
+    fill: #393939;
+}
+
+.label-line {
+    stroke-width: 1;
+    stroke: #393939;
+}
+
+.label-circle {
+    fill: #393939;
+}
+
+.pie-chart-math-function-text {
+    fill: white;
+    stroke: black;
+    stroke-width: 1.8;
+}

@@ -1,0 +1,34 @@
+let newDescription = inputData.description.replace("(Feed generated with FetchRSS )", "");
+
+let message = `
+<a href="${inputData.link}">Source</a>
+
+Description:
+${newDescription}
+`;
+
+let token = "1060753066:AAHx8IBhD52RNZ2SMnGPYc4mzS7rbyKsYvs";
+let data = {
+  chat_id: "-1001141776715",
+  text: message,
+  parse_mode: "HTML",
+  reply_markup: {
+    inline_keyboard: [
+      [
+        {text: "Go to Post", url: inputData.link}
+      ]
+    ]
+  }
+};
+
+await fetch(`https://api.telegram.org/bot${token}/sendMessage`,
+{
+  method: 'POST',
+  body: JSON.stringify(data),
+  headers: {
+    'Content-Type': 'application/json'
+  }
+}
+)
+
+output = [{id: 123, hello: "world"}];

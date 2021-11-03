@@ -1,0 +1,8 @@
+.nps-stacked-bar .nps-line {
+    stroke-width: 2px;
+}
+
+.nps-stacked-bar .nps-dot {
+    stroke-width: 2px;
+    cursor: pointer;
+}

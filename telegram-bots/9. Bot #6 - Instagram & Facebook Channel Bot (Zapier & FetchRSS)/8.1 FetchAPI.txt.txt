@@ -1,0 +1,17 @@
+let token = "1060753066:AAHx8IBhD52RNZ2SMnGPYc4mzS7rbyKsYvs";
+let data = {
+  chat_id: <channel chat id>,
+  text: <message>
+}
+
+await fetch(`https://api.telegram.org/bot${token}/sendMessage`,
+{
+  method: 'POST',
+  body: JSON.stringify(data),
+  headers: {
+    'Content-Type': 'application/json'
+  }
+}
+)
+
+output = [{id: 123, hello: "world"}];

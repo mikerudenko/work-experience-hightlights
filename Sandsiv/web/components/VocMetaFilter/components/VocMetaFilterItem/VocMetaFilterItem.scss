@@ -1,0 +1,75 @@
+.voc-meta-filter {
+  .Select-placeholder {
+    overflow: visible;
+  }
+
+  .Select.is-focused.has-value {
+    .Select-input input {
+      max-width: 129px !important;
+    }
+  }
+
+  .has-value .Select-input {
+    > input {
+      color: transparent;
+    }
+  }
+
+  .Select.has-value.is-clearable.Select--single {
+    & > .Select-control .Select-value {
+      padding-right: 0;
+    }
+  }
+
+  &__select-option,
+  &__select-value {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+  }
+
+  &__select-value {
+    max-width: 100px;
+  }
+
+  &__item-form {
+    background-color: #f5f5f5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    min-height: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: default;
+  }
+
+  &__operator-select,
+  &__attr-select {
+    margin-bottom: 18px;
+  }
+
+  &__item-remove-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    left: 180px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}

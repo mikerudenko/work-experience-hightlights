@@ -1,0 +1,15 @@
+.bubble-chart .bubble {
+    cursor: pointer;
+}
+
+svg:not(:root).bubble-chart {
+    overflow: visible;
+}
+
+.group-title text {
+    text-anchor: start;
+}
+
+.axis-label {
+    word-spacing: -7px;
+}

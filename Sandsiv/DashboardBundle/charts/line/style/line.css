@@ -1,0 +1,14 @@
+.lines > .line-group > .line-dot {
+    cursor: initial;
+}
+
+.lines > .line-group__interactive > .line-dot {
+    cursor: pointer;
+}
+
+.transparent-circle {
+    fill: rgba(0,0,0,0);
+    position: relative;
+    z-index: -555;
+    display: none;
+}

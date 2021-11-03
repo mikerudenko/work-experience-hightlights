@@ -1,0 +1,24 @@
+.multiple-arc .arc-value {
+    cursor: pointer;
+}
+
+.tick-text {
+    alignment-baseline: middle;
+    font-size: 12px;
+    fill: #393939;
+}
+
+.tick-line {
+    stroke-width: 1;
+    stroke: #393939;
+}
+
+.multiple-arc-needle > .multiple-arc-needle-arrow {
+    stroke-width: 1;
+    stroke: #393939;
+    stroke-width: 2px;
+}
+
+.multiple-arc-needle > .multiple-arc-needle-pivot {
+    stroke: #393939;   
+}
