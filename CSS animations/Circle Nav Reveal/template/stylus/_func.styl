@@ -1,0 +1,60 @@
+white = #ecf0f1
+red = #e74c3c
+dark-blue = #2c3e50
+yellow = #f1c40f
+blue = #2980b9
+
+
+primary-color($theme = 'none')
+  if $theme == 'chalk'
+    return dark-blue
+  else if $theme == 'book'
+    return red
+  else if $theme == 'victors'
+    return dark-blue
+  else if $theme == 'sunshine'
+    return yellow
+  else if $theme == 'levelup'
+    return #373142
+  else if $theme == 'fresh'
+    return white
+  else if $theme == 'penguin'
+    return #222
+  else if $theme == 'none'
+    return #FFF
+    
+text-color($theme = 'none')
+  if $theme == 'chalk'
+    return white
+  else if $theme == 'book'
+    return white
+  else if $theme == 'victors'
+    return white
+  else if $theme == 'sunshine'
+    return dark-blue
+  else if $theme == 'levelup'
+    return white
+  else if $theme == 'fresh'
+    return dark-blue
+  else if $theme == 'penguin'
+    return #FFF
+  else if $theme == 'none'
+    return #222
+
+accent-color($theme = 'none')
+  if $theme == 'chalk'
+    return white
+  else if $theme == 'book'
+    return white
+  else if $theme == 'victors'
+    return yellow
+  else if $theme == 'sunshine'
+    return dark-blue
+  else if $theme == 'levelup'
+    return #5edcdb
+  else if $theme == 'fresh'
+    return blue
+  else if $theme == 'penguin'
+    return yellow
+  else if $theme == 'none'
+    return #222

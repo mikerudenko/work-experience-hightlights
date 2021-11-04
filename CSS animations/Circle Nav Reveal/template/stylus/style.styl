@@ -1,0 +1,89 @@
+@import '_func.styl'
+
+// Possible values
+// 'none', 'book','chalk', 'victors', 'sunshine', 'levelup', 'fresh', 'penguin'
+$theme = 'penguin'
+
+// primary-color($theme) or your own value
+$primary = primary-color($theme)
+// text-color($theme) or your own value
+$text = text-color($theme)
+// accent-color($theme) or your own value
+$accent = accent-color($theme)
+
+body
+  padding 40px 5%
+
+.nav
+  width 100vw
+  height 100vh
+  clip-path: circle(0px at 98% 5px);
+  display block
+  position fixed
+  top 0px
+  right 0px
+  background $primary
+  color #333
+  pointer-events none
+  transition 0.6s ease all
+  &.open
+    pointer-events all
+    clip-path: circle(900px at 60% 275px)
+    .interior ul li a
+      animation notice 0.6s ease 0.3s
+      animation-fill-mode: forwards
+    .interior ul li:nth-child(2) a
+      animation-delay 0.4s
+    .interior ul li:nth-child(3) a
+      animation-delay 0.5s
+      
+@keyframes notice
+  0%
+    opacity 0
+    transform translate3d(40px, 0, 0)
+  100%
+    opacity 1
+    transform translate3d(0, 0, 0)
+    
+.nav-toggle
+  cursor pointer
+  position fixed
+  top 0
+  width 80px
+  text-align center
+  right 0
+  padding 20px 0
+  text-transform uppercase
+  font-weight 800
+  color #FFF
+  background #000
+  
+.interior
+  position fixed
+  left 0
+  color $text
+  text-align left
+  top 0
+  width 90%
+  padding 40px 5%
+  h2
+    border-bottom solid 1px $accent
+    padding-bottom 10px
+    text-transform uppercase
+  ul
+    list-style none
+    padding 0
+    li a
+      color $text
+      text-decoration none
+      display block
+      padding 35px 35px 35px 0
+      opacity 0
+      font-size 2em
+      transition 0.3s ease all
+      font-weight 100
+      &:hover
+        padding-left 35px
+        border-left 6px $accent solid
+
+        
