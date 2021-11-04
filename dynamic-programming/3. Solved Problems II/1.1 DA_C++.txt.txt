@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+
+int numberOfArramgements(int n){
+    
+	int ways[n+1];
+    
+	
+	// Base cases
+    
+	ways[0] = 1;
+    
+	ways[1] = 1;
+    
+    
+	
+	// general recurrence relation
+    
+	for(int i = 2; i <= n; i++){
+        
+		ways[i] = ways[i-1] + ways[i-2];
+    
+	}
+    
+    
+	return ways[n];
+
+}
+
+
+
+int main()
+{
+    
+	cout << numberOfArramgements(6);
+
+}
